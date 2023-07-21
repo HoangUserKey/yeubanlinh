@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yêu bạn Linh</title>
+    <link rel="stylesheet" href="start.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+
+<body>
+    <script>
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            window.location.href = "errors.html";
+        }
+    </script>
+    <div class="container">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="wrapper">
+        <div class="buttons">
+            <button class="btn">Click để vào để xem <i class="fa-regular fa-face-kiss" style="color: #ff0000;"></i></button>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    let btn = document.querySelector(".btn");
+    btn.addEventListener("click", function () {
+        window.location.href = "start.html";
+    })
+</script>
+
+<script src="https://kit.fontawesome.com/104db21d31.js" crossorigin="anonymous"></script>
+
+</html>
